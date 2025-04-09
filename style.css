@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    background-color:rgb(246, 245, 242);
+    height:100%;
+}
+
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    width:auto;
+    height: 50px;
+    background: hwb(0 11% 89%);
+    color:aliceblue;
+    padding: 10px 20px;
+}
+.navigation div{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+}
+.navigation div img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+.nav a{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color:azure;
+    font-size: 17px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+}
+.nav a:hover{
+    color:black;
+    background-color: aliceblue;
+    width: 60px;
+    font-size: 18px ;
+    transition: 0.5s;   
+}
+
+.headersection h2{
+
+    text-align: center;
+    font-size: 40px;
+    padding-top:75px;
+
+}
+.headersection p{
+    font-size: 20px;
+    text-align: center;
+    padding-top:10px;
+
+}
+.headersection div{
+    text-align: center;
+    padding-top: 50px;
+}
+.headersection div input{
+    width: 500px;
+    height: 40px;
+    padding: 7px  20px;
+    box-shadow: 5px 5px rgb(107, 96, 96);
+    border-radius: 10px;
+}
+.headersection div input:hover{
+
+    border-color:rgb(87, 238, 57) ;
+    
+}
+
+/***** images container ***** *****/
+
+
+.grid-container {
+    margin-top:100px ;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+
+  .grid-item {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .grid-item img {
+
+    width: 100%;
+    height: 300px;
+    display: block;
+    transition: transform 0.4s ease;
+
+  }
+
+  .grid-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  }
+
+  .grid-item:hover img {
+    transform: scale(1.1);
+  }
+
+/***** this is for footer section *****/  /***** End  *****/
+
+.footer{
+            background-color: rgb(107, 200, 211);
+            padding: 50px 10px;
+            padding-bottom: 10px;
+            position: relative;
+            width: 100%;           
+}
+
+.combine{
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+            padding: 10px 0;
+        }
+    
+
+.followus{
+    width: 50%;
+    flex: 1;
+    padding-left: 250px ;
+
+    
+
+}
+.socialicons {
+
+ padding:20px 0;
+ position: sticky;
+  
+}
+.socialicons a{
+    font-size: 25px;
+    padding:0 10px;
+    padding-left: 0;
+    transition: color 0.5s,font-size 0.5s  ;
+}
+.socialicons a:hover{
+    color:red; 
+    font-size: 30px;
+}
+.information{
+        width:50%;
+        flex:1;
+        padding-right:200px;
+        
+}
+.detail{
+        padding:20px;
+        padding-left: 0;
+        
+}
+.detail a{
+    color:darkgoldenrod;
+    text-decoration: none;
+    transition: font-size 0.5s;
+}
+
+.detail a:hover{
+
+    font-size: 20px;
+    text-decoration: underline;
+    
+}
+.copyright{
+    
+    text-align: center;
+    padding-top: 40px;
+    margin-top: 10px;
+}
+.items{
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 5rem;
+    justify-content: center;
+    margin-bottom:10rem;
+    
+}
+.item{
+    /* margin: 10px; */
+    text-align: center;
+    font-size: 25px;
+    width: 300px;
+    height: 500px;
+    border: 1px solid black;
+}
+.item>img{
+    background-size: cover;
+}
+
+
+
+/***********************end of footer*******************/
