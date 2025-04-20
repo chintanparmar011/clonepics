@@ -1,0 +1,166 @@
+
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>upload-image</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+      
+      
+      body {
+        font-family: 'Montserrat', sans-serif;
+      }  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(107, 200, 211);
+    color: aliceblue;
+    padding: 1px 10px;
+}
+
+.navigation div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navigation div img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.nav a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+    width: 60px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.login {
+    margin: 100px auto;
+    text-align: center;
+    border: 1px solid rgb(107, 99, 99);
+    border-radius: 7px;
+    box-shadow: 4px 4px rgb(133, 132, 132);
+    width: 80%;
+    max-width: 400px;
+    background-color: rgb(128, 223, 223);
+    padding: 20px;
+}
+
+.form {
+    padding: 40px;
+}
+
+.form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: rgb(54, 48, 48);
+    color: white;
+    font-weight: bold;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.form button:hover {
+    transform: scale(1.1);
+    background-color: rgb(33, 33, 33);
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .login {
+        width: 90%;
+        margin: 100px auto;
+    }
+
+    .form {
+        padding: 30px;
+    }
+
+    .form h2 {
+        font-size: 20px;
+    }
+
+    .form input[type="file"] {
+        padding: 8px;
+    }
+
+    .form button {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+   </style>
+</head>
+
+
+<body>
+    <header class="navigation">
+
+        <div class="title">
+            <img src="/photos/wallhaven-gjw8le_1280x1024 copy.png">
+            <h1 >Clonepics</h1> 
+
+        </div>               
+        <nav class="nav">
+            <a href="index.html" class="login-btn">Home</a>
+        </nav>
+    </header>
+   <div class="login">
+       <form class="form" method="get" action="#">
+           <h2>Select a Image </h2><br><br> <input type="file" id="uname" value=""><br><br>
+           <button type="submit" id="submit">Upload</button>
+       </form>
+   </div>
+</body>
+
+
+</html>
+

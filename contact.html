@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contact Us</title>
+    
+    <style>
+
+  
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+  
+      html, body {
+        font-family: 'Montserrat', sans-serif;
+        height: 100%;
+        background-color: #ffffff;
+      }
+  
+      /* --- Navigation --- */
+      .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: rgb(107, 200, 211);
+        padding: 5px 10px;
+      }
+  
+      .title {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+  
+      .title img {
+        width: 50px;
+        border-radius: 50%;
+      }
+  
+      .title h1 {
+        font-size: 30px;
+        color: rgb(251, 243, 243);
+      }
+  
+      .nav {
+        display: flex;
+        gap: 12px;
+      }
+  
+      .nav a {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        color: black;
+        font-size: 17px;
+        padding: 8px 12px;
+        border-radius: 5px;
+        transition: all 0.5s ease;
+      }
+  
+      .nav a:hover {
+        text-decoration: underline;
+        font-size: 18px;
+      }
+  
+      /* --- Container & Form ////////////////////////////////////////////////////////////////////////--- */
+      .container {
+        padding: 40px;
+        max-width: 800px;
+        margin: 60px auto;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+  
+      .container h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+  
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+  
+      input, textarea {
+        padding: 12px;
+        margin: 10px 0;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-family: 'Montserrat', sans-serif;
+      }
+  
+      button {
+        background-color: rgb(107, 200, 211);
+        color: white;
+        padding: 12px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+  
+      button:hover {
+        background-color: rgb(90, 180, 190);
+      }
+  
+      /* --- Responsive Tweaks --- */
+      @media (max-width: 768px) {
+        .navigation {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+        }
+  
+        .nav {
+          width: 100%;
+          justify-content: flex-end;
+        }
+  
+        .title h1 {
+          font-size: 20px;
+        }
+  
+        .container {
+          padding: 20px;
+          margin: 30px 10px;
+        }
+  
+        .container h2 {
+          font-size: 24px;
+        }
+  
+        input, textarea {
+          font-size: 15px;
+        }
+  
+        button {
+          font-size: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navigation">
+      <div class="title">
+        <img src="/photos/wallhaven-gjw8le_1280x1024 copy.png" alt="logo">
+        <h1>Clonepics</h1> 
+      </div>               
+      <nav class="nav">
+        <a href="index.html" class="login-btn">Home</a>
+      </nav>
+    </header>
+  
+    <div class="container">
+      <h2>We'd love to hear from you!</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </body>
+  </html>
+  
