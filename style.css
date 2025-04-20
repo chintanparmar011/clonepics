@@ -176,8 +176,7 @@ html, body {
   }
   
   .item {
-    width: 100%;
-    max-width: 320px;
+    
     height: auto;
     margin: auto;
     text-align: center;
@@ -185,7 +184,7 @@ html, body {
   
   .item > img {
     width: 100%;
-    max-height: 400px;
+    
     object-fit: cover;
     border-radius: 7px;
     transition: transform 0.5s;
@@ -338,10 +337,7 @@ html, body {
         grid-template-columns: repeat(2, 1fr);
     }
   
-    .item > img {
-        padding-top:20px;
-      max-height: 300px;
-    }
+
   
     .container>.row {
       flex-direction: column;
