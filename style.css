@@ -288,9 +288,9 @@ html, body {
   .headersection p {
     font-size: 18px;
   }
-  .item {
-    height: 400px;
-  }
+  .items {
+    grid-template-columns: repeat(3, 1fr);
+}
 }
 
 /* Mobile //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
